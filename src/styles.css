@@ -3,3 +3,54 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-family: var(--font-poppins);
+}
+
+textarea {
+  font-family: inherit;
+}
+
+.container {
+  padding: 2rem 0;
+  max-width: 720px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.address-form-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn-primary:disabled {
+  background-color: hsl(var(--primary-light));
+  pointer-events: none;
+}
+
+.card {
+  padding: 0.5rem;
+}
+
+.address-cards-wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.address__name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.address__contact {
+  font-weight: 500;
+}
+
+.address__address {
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  color: hsla(var(--font-500), 0.75);
+  font-weight: 500;
+}
