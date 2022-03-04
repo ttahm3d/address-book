@@ -26,7 +26,10 @@ export default function App() {
   const handleChange = (e, fieldName) => {
     setAddressForm((address) => ({
       ...address,
-      [fieldName]: e.target.value
+      [fieldName]:
+        fieldName === "contact"
+          ? e.target.value.trim().replace(/[^0-9]/g, "")
+          : e.target.value
     }));
   };
 

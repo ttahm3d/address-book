@@ -5,6 +5,7 @@ const AddressForm = ({ addressForm, handleChange, addAddress }) => {
     addressForm.state &&
     addressForm.address &&
     addressForm.contact;
+
   return (
     <div className="container">
       <div className="address-form-wrapper">
@@ -27,7 +28,7 @@ const AddressForm = ({ addressForm, handleChange, addAddress }) => {
               Contact Number
             </label>
             <input
-              type="number"
+              type="text"
               id="contact"
               value={addressForm.contact}
               onChange={(e) => handleChange(e, "contact")}
